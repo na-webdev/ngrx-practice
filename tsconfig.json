@@ -19,10 +19,17 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
+    "strictPropertyInitialization": false,
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@counter": ["./src/app/counter"],
+      "@counter/*": ["./src/app/counter/*"],
+      "@root-store": ["./src/app/root-store"],
+      "@root-store/*": ["./src/app/root-store/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
